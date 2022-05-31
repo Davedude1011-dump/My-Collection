@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chess :)</title>
+    <link rel="stylesheet" href="CSS.css" />
+    <script src="JS.js"></script>
+  </head>
+  <body>
+    <img
+      id="img1"
+      style="position: absolute; left: 12%"
+      src="images\StockFish-removebg-preview.png"
+    />
+    <img
+      id="img2"
+      style="position: absolute; left: 67%; top: 60%"
+      src="images\phpveiDNF-removebg-preview.png"
+    />
+    <div id="card"></div>
+    <div id="click">fin</div>
+    <div class="outerBoard">
+      <table
+        class="chessboard"
+        border="5"
+        cellspacing="0"
+        style="position: relative; margin-left: auto; margin-right: auto"
+      >
+        <tr>
+          <td class="white" onclick="A1()">
+            <a style="font-size: 60px" id="A1text">♜</a>
+          </td>
+          <td class="black" onclick="A2()">
+            <a style="font-size: 60px" id="A2text">♞</a>
+          </td>
+          <td class="white" onclick="A3()">
+            <a style="font-size: 60px" id="A3text">♝</a>
+          </td>
+          <td class="black" onclick="A4()">
+            <a style="font-size: 60px" id="A4text">♛</a>
+          </td>
+          <td class="white" onclick="A5()">
+            <a style="font-size: 60px" id="A5text">♚</a>
+          </td>
+          <td class="black" onclick="A6()">
+            <a style="font-size: 60px" id="A6text">♝</a>
+          </td>
+          <td class="white" onclick="A7()">
+            <a style="font-size: 60px" id="A7text">♞</a>
+          </td>
+          <td class="black" onclick="A8()">
+            <a style="font-size: 60px" id="A8text">♜</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="black" onclick="B1()">
+            <a style="font-size: 60px" id="B1text">♟︎</a>
+          </td>
+          <td class="white" onclick="B2()">
+            <a style="font-size: 60px" id="B2text">♟︎</a>
+          </td>
+          <td class="black" onclick="B3()">
+            <a style="font-size: 60px" id="B3text">♟︎</a>
+          </td>
+          <td class="white" onclick="B4()">
+            <a style="font-size: 60px" id="B4text">♟︎</a>
+          </td>
+          <td class="black" onclick="B5()">
+            <a style="font-size: 60px" id="B5text">♟︎</a>
+          </td>
+          <td class="white" onclick="B6()">
+            <a style="font-size: 60px" id="B6text">♟︎</a>
+          </td>
+          <td class="black" onclick="B7()">
+            <a style="font-size: 60px" id="B7text">♟︎</a>
+          </td>
+          <td class="white" onclick="B8()">
+            <a style="font-size: 60px" id="B8text">♟︎</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="white" onclick="C1()">
+            <a style="font-size: 60px" id="C1text"> </a>
+          </td>
+          <td class="black" onclick="C2()">
+            <a style="font-size: 60px" id="C2text"> </a>
+          </td>
+          <td class="white" onclick="C3()">
+            <a style="font-size: 60px" id="C3text"> </a>
+          </td>
+          <td class="black" onclick="C4()">
+            <a style="font-size: 60px" id="C4text"> </a>
+          </td>
+          <td class="white" onclick="C5()">
+            <a style="font-size: 60px" id="C5text"> </a>
+          </td>
+          <td class="black" onclick="C6()">
+            <a style="font-size: 60px" id="C6text"> </a>
+          </td>
+          <td class="white" onclick="C7()">
+            <a style="font-size: 60px" id="C7text"> </a>
+          </td>
+          <td class="black" onclick="C8()">
+            <a style="font-size: 60px" id="C8text"> </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="black" onclick="D1()">
+            <a style="font-size: 60px" id="D1text"> </a>
+          </td>
+          <td class="white" onclick="D2()">
+            <a style="font-size: 60px" id="D2text"> </a>
+          </td>
+          <td class="black" onclick="D3()">
+            <a style="font-size: 60px" id="D3text"> </a>
+          </td>
+          <td class="white" onclick="D4()">
+            <a style="font-size: 60px" id="D4text"> </a>
+          </td>
+          <td class="black" onclick="D5()">
+            <a style="font-size: 60px" id="D5text"> </a>
+          </td>
+          <td class="white" onclick="D6()">
+            <a style="font-size: 60px" id="D6text"> </a>
+          </td>
+          <td class="black" onclick="D7()">
+            <a style="font-size: 60px" id="D7text"> </a>
+          </td>
+          <td class="white" onclick="D8()">
+            <a style="font-size: 60px" id="D8text"> </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="white" onclick="E1()">
+            <a style="font-size: 60px" id="E1text"> </a>
+          </td>
+          <td class="black" onclick="E2()">
+            <a style="font-size: 60px" id="E2text"> </a>
+          </td>
+          <td class="white" onclick="E3()">
+            <a style="font-size: 60px" id="E3text"> </a>
+          </td>
+          <td class="black" onclick="E4()">
+            <a style="font-size: 60px" id="E4text"> </a>
+          </td>
+          <td class="white" onclick="E5()">
+            <a style="font-size: 60px" id="E5text"> </a>
+          </td>
+          <td class="black" onclick="E6()">
+            <a style="font-size: 60px" id="E6text"> </a>
+          </td>
+          <td class="white" onclick="E7()">
+            <a style="font-size: 60px" id="E7text"> </a>
+          </td>
+          <td class="black" onclick="E8()">
+            <a style="font-size: 60px" id="E8text"> </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="black" onclick="F1()">
+            <a style="font-size: 60px" id="F1text"> </a>
+          </td>
+          <td class="white" onclick="F2()">
+            <a style="font-size: 60px" id="F2text"> </a>
+          </td>
+          <td class="black" onclick="F3()">
+            <a style="font-size: 60px" id="F3text"> </a>
+          </td>
+          <td class="white" onclick="F4()">
+            <a style="font-size: 60px" id="F4text"> </a>
+          </td>
+          <td class="black" onclick="F5()">
+            <a style="font-size: 60px" id="F5text"> </a>
+          </td>
+          <td class="white" onclick="F6()">
+            <a style="font-size: 60px" id="F6text"> </a>
+          </td>
+          <td class="black" onclick="F7()">
+            <a style="font-size: 60px" id="F7text"> </a>
+          </td>
+          <td class="white" onclick="F8()">
+            <a style="font-size: 60px" id="F8text"> </a>
+          </td>
+        </tr>
+        <tr>
+          <td class="white" onclick="G1()">
+            <a style="font-size: 60px" id="G1text"
+              ><div style="color: white">♙</div></a
+            >
+          </td>
+          <td class="black" onclick="G2()">
+            <a style="font-size: 60px" id="G2text"
+              ><div style="color: white">♙</div></a
+            >
+          </td>
+          <td class="white" onclick="G3()">
+            <a style="font-size: 60px" id="G3text"
+              ><div style="color: white">♙</div></a
+            >
+          </td>
+          <td class="black" onclick="G4()">
+            <a style="font-size: 60px" id="G4text"
+              ><div style="color: white">♙</div></a
+            >
+          </td>
+          <td class="white" onclick="G5()">
+            <a style="font-size: 60px" id="G5text"
+              ><div style="color: white">♙</div></a
+            >
+          </td>
+          <td class="black" onclick="G6()">
+            <a style="font-size: 60px" id="G6text"
+              ><div style="color: white">♙</div></a
+            >
+          </td>
+          <td class="white" onclick="G7()">
+            <a style="font-size: 60px" id="G7text"
+              ><div style="color: white">♙</div></a
+            >
+          </td>
+          <td class="black" onclick="G8()">
+            <a style="font-size: 60px" id="G8text"
+              ><div style="color: white">♙</div></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="black" onclick="H1()">
+            <a style="font-size: 60px" id="H1text"
+              ><div style="color: white">♖</div></a
+            >
+          </td>
+          <td class="white" onclick="H2()">
+            <a style="font-size: 60px" id="H2text"
+              ><div style="color: white">♘</div></a
+            >
+          </td>
+          <td class="black" onclick="H3()">
+            <a style="font-size: 60px" id="H3text"
+              ><div style="color: white">♗</div></a
+            >
+          </td>
+          <td class="white" onclick="H4()">
+            <a style="font-size: 60px" id="H4text"
+              ><div style="color: white">♕</div></a
+            >
+          </td>
+          <td class="black" onclick="H5()">
+            <a style="font-size: 60px" id="H5text"
+              ><div style="color: white">♔</div></a
+            >
+          </td>
+          <td class="white" onclick="H6()">
+            <a style="font-size: 60px" id="H6text"
+              ><div style="color: white">♗</div></a
+            >
+          </td>
+          <td class="black" onclick="H7()">
+            <a style="font-size: 60px" id="H7text"
+              ><div style="color: white">♘</div></a
+            >
+          </td>
+          <td class="white" onclick="H8()">
+            <a style="font-size: 60px" id="H8text"
+              ><div style="color: white">♖</div></a
+            >
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

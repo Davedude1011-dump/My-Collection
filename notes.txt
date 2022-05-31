@@ -1,0 +1,22 @@
+function rightPopUpBoxTiltFunctionClose() {
+    document.getElementById("slidingBorderRightPopUpBox").style.animationName = "slidingBorderRightPopUpBoxAnimationCloseBeforeTurn"
+    document.getElementById("rightPopUpBox").style.animationDuration = "1s"
+    setTimeout(() => {  document.getElementById("rightPopUpBox").style.animationName = "rightPopUpBoxTiltAnimation"; }, 1000);
+    setTimeout(() => {  document.getElementById("rightPopUpBox").style.height = "85%"; }, 1000);
+    document.getElementById("rightPopUpBoxExit").style.display = "none";
+    setTimeout(() => {  document.getElementById("slidingBorderRightPopUpBox").style.animationName = "slidingBorderRightPopUpBoxAnimationOpenBeforeTurn"; }, 2000);
+    setTimeout(() => {  document.getElementById("slidingBorderRightPopUpBox").style.animationDuration = "1s"; }, 2000);
+    setTimeout(() => {  document.getElementById("slidingBorderRightPopUpBox").style.animationDelay = "1s"; }, 2000);
+    
+}
+
+function rightPopUpBoxTiltFunctionClose() {
+    document.getElementById("slidingBorderRightPopUpBox").style.animationName = "slidingBorderRightPopUpBoxAnimationCloseBeforeTurn"
+    document.getElementById("slidingBorderRightPopUpBox").style.animationDuration = "1s"
+    document.getElementById("slidingBorderRightPopUpBox").style.animationDelay = "0s"
+    document.getElementById("rightPopUpBox").style.animationName = "rightPopUpBoxTiltAnimation"
+    document.getElementById("rightPopUpBox").style.animationDirection = "reverse"
+    document.getElementById("rightPopUpBox").style.animationDelay = "1s"
+    setTimeout(() => {  document.getElementById("rightPopUpBox").style.height = "85%"; }, 1000)
+    
+}
