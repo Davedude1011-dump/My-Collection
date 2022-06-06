@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    width: 100%;
+    height: 2000px
+}
+
+.left {
+    width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(rgb(39, 39, 39), rgb(47, 47, 47));
+}
+
+.leftTitleBox {
+    position: absolute;
+    height: 10vh;
+    top: 2%;
+    left: 1%;
+    width: 68%;
+    border: rgb(64, 255, 0) 3px solid;
+    border-radius: 15px;
+}
+.leftTitle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: rgb(64, 255, 0)
+}
+
+.itemsPlace {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    top: 10%
+}
+
+.rowOne {
+    height: 30%
+}
+
+.productOneOuter {
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    left: 5%;
+    background-color: rgb(89, 89, 89);
+    border-radius: 25px;
+}
+.productOneImg {
+    position: relative;
+    height: 55%;
+    top: 2%;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    border: rgb(64, 255, 0) 2px solid;
+    border-radius: 50px;
+}
+.productOneTitle {
+    position: relative;
+    font-size: 40px;
+    left: 25%;
+    top: 5%;
+    font-family: 'Anton';
+    letter-spacing: 3px;
+}
+.productOneButton {
+    position: relative;
+    height: 10%;
+    width: 90%;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    background-color: rgb(0, 255, 255);
+    border-radius: 20px;
+}
+
+.productTwoOuter {
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(89, 89, 89);
+    border-radius: 25px;
+}
+.productTwoImg {
+    position: relative;
+    height: 55%;
+    top: 2%;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    border: rgb(64, 255, 0) 2px solid;
+    border-radius: 50px;
+}
+.productTwoTitle {
+    position: relative;
+    font-size: 40px;
+    left: 15%;
+    top: 5%;
+    font-family: 'Anton';
+    letter-spacing: 3px;
+}
+.secondWordProductTwoTitle {
+    position: relative;
+    font-size: 40px;
+    left: 40%;
+    top: 5%;
+    font-family: 'Anton';
+    letter-spacing: 3px;
+}
+.productTwoButton {
+    position: relative;
+    height: 10%;
+    width: 90%;
+    left: 50%;
+    top: 9%;
+    transform: translate(-50%);
+    background-color: rgb(0, 255, 255);
+    border-radius: 20px;
+}
+
+.productThreeOuter {
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    left: 70%;
+    background-color: rgb(89, 89, 89);
+    border-radius: 25px;
+}
+.productThreeImg {
+    position: relative;
+    height: 55%;
+    top: 2%;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    border: rgb(64, 255, 0) 2px solid;
+    border-radius: 50px;
+}
+
+.rowTwo {
+    height: 30%
+}
+
+.productFourTitle {
+    position: relative;
+    font-size: 40px;
+    left: 8%;
+    top: 5%;
+    font-family: 'Anton';
+    letter-spacing: 3px;
+}
+
+.productSixTitle {
+    position: relative;
+    font-size: 40px;
+    left: 10%;
+    top: 5%;
+    letter-spacing: 3px;
+}
+
+.priceText {
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro';
+}
+.priceTextThree {
+    position: relative;
+    top: -30%;
+    font-size: 25px;
+    font-family: 'Kdam Thmor Pro';
+}
+
+.right {
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    left: 70%;
+    top: 0;
+    background-color: rgb(105, 105, 105);
+}
+
+.rightTopPanel {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(158, 158, 158);
+}
+#title {
+    position: absolute;
+    color:rgba(0, 0, 0, 0);
+    font-size: 40px;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Kdam Thmor Pro';
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+    animation-name: titleFade;
+}
+.logo {
+    position: relative;
+    height: 90%;
+    animation-name: logoMove;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+@keyframes titleFade{
+    0% {
+        color:rgba(0, 0, 0, 0)
+    }
+    100% {
+        color:rgba(0, 0, 0, 100)
+    }
+}
+@keyframes logoMove{
+    0% {
+        left: 0%
+    }
+    100% {
+        left: 75%
+    }
+}
+
+.rightBelowPanel {
+    position: absolute;
+    top: 15vh;
+    width: 100%;
+    height: 85vh;
+    background-color: rgb(89, 89, 89);
+}
+.rightBelowPanelList li{
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-top: 80px;
+    list-style-type: none;
+    left: 10%;
+    font-style: oblique;
+}
+.borderAroundList:hover {
+    transition: 0.2s;
+    background-color: rgba(64, 255, 0, 0.552);
+    cursor: pointer;
+}

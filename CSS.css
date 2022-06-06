@@ -1,7 +1,7 @@
 :root {
     --bg-color: rgb(26, 27, 38);
-    --typewriterSpeed: 0.5s;
-    --typewriterCharacters: 24;
+    --typewriterSpeed: 4s;
+    --typewriterCharacters: 25;
   }
   
   body {
@@ -300,4 +300,37 @@
 #slidingBorderRightPopUpBox {
   animation-duration: 5s;
   animation-fill-mode: forwards;
+}
+
+.ButtonMain:hover .ButtonArrow {
+  animation-name: ButtonArrowOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.ButtonSecondary:hover .BendyButtonArrow {
+  animation-name: BendyButtonArrowColor;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.ButtonMain:hover .ButtonMainText {
+  animation-name: ButtonTextSeeThrough;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ButtonArrowOut {
+  100% {
+    position: relative;
+    left: 30px;
+  }
+}
+@keyframes ButtonTextSeeThrough {
+  100% {
+    color: rgba(255, 255, 255, 0)
+  }
+}
+@keyframes BendyButtonArrowColor {
+  100% {
+    color:rgb(26, 27, 38)
+  }
 }

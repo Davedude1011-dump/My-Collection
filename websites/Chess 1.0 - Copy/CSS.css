@@ -26,6 +26,10 @@ body {
   font-size: 30px;
 }
 
+td {
+  border: none
+}
+
 .black {
   background-color: #853300;
 }
